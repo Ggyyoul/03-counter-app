@@ -1,5 +1,9 @@
 const PrimeraApp = () => {
-  return <div>Hola mundo</div>;
+  return (
+    <>
+      <h1>Mi App</h1>
+      <p>Mi primer componente</p>
+    </>
+  );
 };
-
 export default PrimeraApp;
