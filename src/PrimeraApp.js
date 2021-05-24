@@ -1,7 +1,7 @@
-const PrimeraApp = () => {
+const PrimeraApp = ({ saludo = "Hola" }) => {
   return (
     <>
-      <h1>Mi App</h1>
+      <h1>{saludo}</h1>
       <p>Mi primer componente</p>
     </>
   );
