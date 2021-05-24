@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const PrimeraApp = ({ saludo = "Hola" }) => {
   return (
     <>
@@ -5,5 +7,9 @@ const PrimeraApp = ({ saludo = "Hola" }) => {
       <p>Mi primer componente</p>
     </>
   );
+};
+
+PrimeraApp.propTypes = {
+  saludo: PropTypes.string.isRequired,
 };
 export default PrimeraApp;
