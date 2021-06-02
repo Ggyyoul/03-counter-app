@@ -32,4 +32,17 @@ describe('test in <CounterApp /> component', () => {
     expect(counterText).toBe('9')
   })
   
+  test('should reset to defaul value when button "reset" is press', () => {
+
+    const wrapper = shallow(<CounterApp  value= {105}/>)
+
+    wrapper.find('button').at(0).simulate('click')
+    wrapper.find('button').at(0).simulate('click')
+    wrapper.find('button').at(1).simulate('click')
+
+    const counterText = wrapper.find('h2').text()
+
+    expect(counterText).toBe('105')
+  })
+  
 })
